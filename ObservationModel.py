@@ -93,29 +93,33 @@ class ObservationModel(object):
         return distance.euclidean([fix_x, fix_y], [ext_x, ext_y])
 
 
-gen = DisplayGenerator()
+#gen = DisplayGenerator()
 
-env = gen.sample()
+#env = gen.sample()
 
-space = np.ones((N_ROWS, N_COLS)) * -1
-print env.target
-for ext_x in range(0, N_ROWS, 1):
-    for ext_y in range(0, N_COLS, 1):
-        if env.objects[ext_x][ext_y].color == env.target.color:
-            space[ext_x][ext_y] = 1
+#space = np.ones((N_ROWS, N_COLS)) * -1
+#print env.target
+#for ext_x in range(0, N_ROWS, 1):
+#    for ext_y in range(0, N_COLS, 1):
+#        if env.objects[ext_x][ext_y].text == env.target.text:
+#            space[ext_x][ext_y] = 1
 
-print space
+#print space
+#print "------------"
+#model = ObservationModel()
 
-model = ObservationModel()
+#col, shp, size, txt = model.sample(0, env)
+#print txt
+#print "------------"
+#col, shp, size, txt = model.sample(10, env)
+#print txt
+#print "------------"
+#col, shp, size, txt = model.sample(38, env)
+#print txt
+#print "------------"
+#col, shp, size, txt = model.sample(70, env)
+#print txt
+#print "------------"
+#col, shp, size, txt = model.sample(76, env)
 
-col, shp, size, txt = model.sample(0, env)
-print col
-col, shp, size, txt = model.sample(10, env)
-print col
-col, shp, size, txt = model.sample(38, env)
-print col
-col, shp, size, txt = model.sample(70, env)
-print col
-col, shp, size, txt = model.sample(76, env)
-
-print col
+#print txt
